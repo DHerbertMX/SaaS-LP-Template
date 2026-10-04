@@ -43,11 +43,16 @@ export const ProductShowcase = () => {
         {/* Image display area */}
         <div className="relative">
           {/* Main product image */}
-          <Image src={productImage} alt="Vista del producto" className="mt-10" />
+          <Image
+            src={productImage}
+            alt="Vista del producto"
+            className="mt-10"
+          />
           {/* Imagen de pirámide displayed conditionally on medium screens and above */}
           <motion.img
             src={pyramidImage.src}
-            alt="Imagen de pirámide"
+            alt=""
+            aria-hidden
             height={262}
             width={262}
             className="absolute -right-36 -top-32 hidden md:block"
@@ -56,7 +61,8 @@ export const ProductShowcase = () => {
           {/* Imagen de tubo displayed conditionally on medium screens and above */}
           <motion.img
             src={tubeImage.src}
-            alt="Imagen de tubo"
+            alt=""
+            aria-hidden
             height={248}
             width={248}
             className="absolute -left-36 bottom-24 hidden md:block"

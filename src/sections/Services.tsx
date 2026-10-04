@@ -13,9 +13,7 @@ const icons: Record<string, React.ReactNode> = {
   rocket: (
     <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09ZM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Zm-3-3H4s.55-3.03 2-4c1.62-1.08 5 0 5 0m1 7v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
   ),
-  catalog: (
-    <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" />
-  ),
+  catalog: <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" />,
   cart: (
     <path d="M8 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm11 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM2 2h3l2.7 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 1.9-1.5L23 7H6" />
   ),
@@ -60,7 +58,8 @@ export const Services = () => {
         <div className="relative mt-10">
           <motion.img
             src={pyramidImage.src}
-            alt="Imagen de pirámide"
+            alt=""
+            aria-hidden
             width={262}
             height={262}
             className="absolute -right-36 -top-32 hidden md:block"
@@ -68,7 +67,8 @@ export const Services = () => {
           />
           <motion.img
             src={noodleImage.src}
-            alt="Imagen decorativa"
+            alt=""
+            aria-hidden
             width={220}
             className="absolute -left-40 bottom-10 hidden md:block"
             style={{ rotate: 30, translateY }}

@@ -34,23 +34,27 @@ export const Hero = () => {
             </h1>
             {/* Description paragraph */}
             <p className="mt-6 text-xl tracking-tight text-[#010D3E]">
-              Diseñamos y desarrollamos aplicaciones web, móviles y sistemas a la
-              medida de tu empresa: escalables, seguros y listos para crecer contigo.
+              Diseñamos y desarrollamos aplicaciones web, móviles y sistemas a
+              la medida de tu empresa: escalables, seguros y listos para crecer
+              contigo.
             </p>
             <div className="mt-[30px] flex items-center gap-1">
               {/* Call to action buttons */}
-              <a href="#contacto" className="btn btn-primary">Cotiza tu proyecto</a>
-              <button className="btn btn-text gap-1">
+              <a href="#contacto" className="btn btn-primary">
+                Cotiza tu proyecto
+              </a>
+              <a href="#servicios" className="btn btn-text gap-1">
                 <span>Conoce más</span>
                 <ArrowIcon className="h-5 w-5" />
-              </button>
+              </a>
             </div>
           </div>
           <div className="relative mt-20 md:mt-0 md:h-[648px] md:flex-1">
             {/* Images displayed in the hero section */}
             <motion.img
               src={cogImage.src}
-              alt="Imagen de engranaje"
+              alt=""
+              aria-hidden
               className="md:absolute md:-left-6 md:h-full md:w-auto md:max-w-none lg:left-0"
               animate={{
                 translateY: [-30, 30],
@@ -66,7 +70,8 @@ export const Hero = () => {
               src={cylinderImage.src}
               width={220}
               height={220}
-              alt="Imagen de cilindro"
+              alt=""
+              aria-hidden
               className="-left-32 -top-8 hidden md:absolute md:block"
               style={{
                 translateY: translateY,
@@ -75,7 +80,8 @@ export const Hero = () => {
             <motion.img
               src={noodleImage.src}
               width={220}
-              alt="Imagen decorativa"
+              alt=""
+              aria-hidden
               className="absolute left-[448px] top-[524px] hidden lg:block"
               style={{
                 rotate: 30,

@@ -49,14 +49,16 @@ export const Contact = () => {
           {/* Decorative props */}
           <motion.img
             src={starImage.src}
-            alt="Imagen de estrella"
+            alt=""
+            aria-hidden
             width={300}
             className="pointer-events-none absolute -left-96 -top-28 hidden lg:block"
             style={{ translateY }}
           />
           <motion.img
             src={cylinderImage.src}
-            alt="Imagen de cilindro"
+            alt=""
+            aria-hidden
             width={200}
             className="pointer-events-none absolute -bottom-10 -right-60 hidden lg:block"
             style={{ translateY }}
@@ -153,7 +155,12 @@ export const Contact = () => {
                 <ArrowRight className="h-5 w-5" />
               </button>
               <p className="text-center text-xs tracking-tight text-black/40">
-                Se abrirá WhatsApp con tu mensaje listo para enviar.
+                Se abrirá WhatsApp con tu mensaje listo para enviar. Consulta
+                nuestro{" "}
+                <a href="/aviso-de-privacidad" className="underline">
+                  aviso de privacidad
+                </a>
+                .
               </p>
             </motion.form>
           </div>

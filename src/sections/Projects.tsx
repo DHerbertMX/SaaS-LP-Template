@@ -59,7 +59,9 @@ export const Projects = () => {
           <div className="flex justify-center">
             <div className="tag">Proyectos</div>
           </div>
-          <h2 className="section-title mt-5">Nuestro trabajo habla por sí solo</h2>
+          <h2 className="section-title mt-5">
+            Nuestro trabajo habla por sí solo
+          </h2>
         </div>
         {/* Carousel */}
         <div
@@ -70,7 +72,8 @@ export const Projects = () => {
           {/* Decorative props */}
           <motion.img
             src={pyramidImage.src}
-            alt="Imagen de pirámide"
+            alt=""
+            aria-hidden
             width={220}
             height={220}
             className="pointer-events-none absolute -left-28 -top-16 z-10 hidden md:block"
@@ -78,7 +81,8 @@ export const Projects = () => {
           />
           <motion.img
             src={springImage.src}
-            alt="Imagen de resorte"
+            alt=""
+            aria-hidden
             width={240}
             className="pointer-events-none absolute -right-32 bottom-20 z-10 hidden md:block"
             style={{ translateY }}

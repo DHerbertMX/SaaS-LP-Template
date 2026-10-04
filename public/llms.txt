@@ -1,0 +1,31 @@
+# Herzago
+
+> Herzago (herzago.dev) es una empresa mexicana de desarrollo de software. Creamos landing pages, catálogos de productos, tiendas online, sitios web corporativos y aplicaciones web a medida, y ayudamos a las marcas a crecer en redes sociales.
+
+Atendemos a negocios y emprendedores en México de forma remota. Cada proyecto incluye análisis, diseño UX/UI, desarrollo, pruebas y despliegue en la nube. La primera consultoría es gratuita.
+
+## Servicios
+
+- Landing pages: páginas de aterrizaje rápidas, responsive y optimizadas para SEO, con formularios y WhatsApp integrados.
+- Catálogos de productos: administrador de productos, búsqueda, filtros por categoría y pedidos por WhatsApp o formulario.
+- Tiendas online: e-commerce con carrito, pasarelas de pago, control de inventario, cupones y envíos.
+- Sitios web corporativos: secciones de servicios y equipo, blog, panel para editar contenidos, dominio y correos.
+- Aplicaciones web a medida: sistemas de reservas, CRM, inventarios, facturación, paneles administrativos e integración con APIs.
+- Impulso en redes sociales: crecimiento de alcance e interacción en Facebook, Instagram y TikTok.
+
+## Proyectos
+
+- [WeekendMX](https://www.weekendmx.com/): portal de conciertos con eventos, boletos, blog y galería.
+- [Escuela para Padres](https://escuelaparapadres.vercel.app/): aplicación web de registro a talleres por plantel.
+- [Pet X](https://petx-ten.vercel.app/): sitio para clínica veterinaria con catálogo y reservación de citas.
+
+## Contacto
+
+- Sitio: https://herzago.dev
+- WhatsApp: +52 833 443 7517
+- Formulario: https://herzago.dev/#contacto
+
+## Legal
+
+- [Aviso de privacidad](https://herzago.dev/aviso-de-privacidad)
+- [Términos y condiciones](https://herzago.dev/terminos-y-condiciones)

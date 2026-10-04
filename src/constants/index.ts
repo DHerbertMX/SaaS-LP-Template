@@ -10,6 +10,11 @@ export const testimonials = [
     name: "Pedro Muñoz",
     company: "WeekendMX",
   },
+  {
+    text: "El trabajo realizado por Herzago ha sido excelente; sabe plasmar de manera óptima las necesidades de sus clientes, además de tener mucha atención a los detalles, trato cordial, tiempos ideales de entrega, dar sugerencias de mejora, etc. Logra hacerlo de la forma más sencilla para los usuarios que no somos expertos en tecnologías, sin descuidar lo estético y eficiente de la plataforma. Además de la versatilidad de áreas para las que se necesite, en mi caso, un ámbito escolar.",
+    name: "Marisela López",
+    company: "Psicóloga Orientadora, Colegio de Bachilleres",
+  },
 ];
 
 // Services
@@ -124,3 +129,34 @@ export const contactInfo = {
   email: "contacto@herzago.dev",
   location: "México · Trabajamos de forma remota",
 };
+
+// Site-wide info used for SEO and legal pages (TODO: confirm domain and legal details)
+export const siteConfig = {
+  name: "Herzago",
+  url: "https://herzago.dev",
+  title: "Herzago | Desarrollo de software, páginas web y tiendas online",
+  description:
+    "Creamos landing pages, catálogos de productos, tiendas online, sitios corporativos y aplicaciones web a medida para impulsar tu negocio en México.",
+  keywords: [
+    "desarrollo de software",
+    "desarrollo web",
+    "páginas web",
+    "landing page",
+    "tienda online",
+    "e-commerce",
+    "catálogo de productos",
+    "aplicaciones web a medida",
+    "sitios web corporativos",
+    "redes sociales",
+    "agencia de desarrollo México",
+  ],
+  legalUpdated: "4 de octubre de 2026",
+};
+
+// Navigation links; "/#id" so they also work from the legal pages
+export const navLinks = [
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#proyectos", label: "Proyectos" },
+  { href: "/#clientes", label: "Clientes" },
+  { href: "/#contacto", label: "Contacto" },
+];
