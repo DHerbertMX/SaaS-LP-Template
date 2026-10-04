@@ -24,7 +24,7 @@ export const Header = () => {
           {/* Flex container for logo and navigation */}
           <div className="flex items-center justify-between">
             {/* Logo image */}
-            <Image src={Logo} alt="Saas Logo" height={40} width={40} />
+            <Image src={Logo} alt="Saas Logo" height={200} width={120} />
             {/* Menu icon for mobile view */}
             <MenuIcon className="h-5 w-5 md:hidden" />
             {/* Navigation links, hidden on smaller screens */}

@@ -13,7 +13,7 @@ export const Footer = () => {
       <div className="container">
         {/* Logo section with gradient background */}
         <div className="relative inline-flex before:absolute before:bottom-0 before:top-2 before:w-full before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:blur before:content-['']">
-          <Image src={logo} height={40} alt="SaaS Logo" className="relative" />
+          <Image src={logo} height={60} alt="SaaS Logo" className="relative" />
         </div>
         {/* Navigation links */}
         <nav className="mt-6 flex flex-col gap-6 md:flex-row md:justify-center">
