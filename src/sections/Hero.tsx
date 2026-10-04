@@ -27,21 +27,21 @@ export const Hero = () => {
         <div className="items-center md:flex">
           <div className="md:w-[478px]">
             {/* Version indicator */}
-            <div className="tag">Version 2.0 is here</div>
+            <div className="tag">Desarrollo de software a medida</div>
             {/* Main heading */}
             <h1 className="mt-6 bg-gradient-to-b from-black to-[#001E80] bg-clip-text text-5xl font-bold tracking-tighter text-transparent md:text-7xl">
-              Pathway to productivity
+              Software que impulsa tu negocio
             </h1>
             {/* Description paragraph */}
             <p className="mt-6 text-xl tracking-tight text-[#010D3E]">
-              Celebrate the joy of accomplishment with an app designed to track
-              your progress, motivate your efforts, and celebrate your success.
+              Diseñamos y desarrollamos aplicaciones web, móviles y sistemas a la
+              medida de tu empresa: escalables, seguros y listos para crecer contigo.
             </p>
             <div className="mt-[30px] flex items-center gap-1">
               {/* Call to action buttons */}
-              <button className="btn btn-primary">Get for free</button>
+              <a href="#contacto" className="btn btn-primary">Cotiza tu proyecto</a>
               <button className="btn btn-text gap-1">
-                <span>Learn more</span>
+                <span>Conoce más</span>
                 <ArrowIcon className="h-5 w-5" />
               </button>
             </div>
@@ -50,7 +50,7 @@ export const Hero = () => {
             {/* Images displayed in the hero section */}
             <motion.img
               src={cogImage.src}
-              alt="Cog image"
+              alt="Imagen de engranaje"
               className="md:absolute md:-left-6 md:h-full md:w-auto md:max-w-none lg:left-0"
               animate={{
                 translateY: [-30, 30],
@@ -66,7 +66,7 @@ export const Hero = () => {
               src={cylinderImage.src}
               width={220}
               height={220}
-              alt="Cylinder image"
+              alt="Imagen de cilindro"
               className="-left-32 -top-8 hidden md:absolute md:block"
               style={{
                 translateY: translateY,
@@ -75,7 +75,7 @@ export const Hero = () => {
             <motion.img
               src={noodleImage.src}
               width={220}
-              alt="Noodle image"
+              alt="Imagen decorativa"
               className="absolute left-[448px] top-[524px] hidden lg:block"
               style={{
                 rotate: 30,

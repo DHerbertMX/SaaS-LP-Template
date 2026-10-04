@@ -28,35 +28,35 @@ export const ProductShowcase = () => {
         <div className="section-heading">
           <div className="flex justify-center">
             {/* Tagline for the section */}
-            <div className="tag">Boost your productivity</div>
+            <div className="tag">Tecnología a tu medida</div>
           </div>
           {/* Main title of the section */}
           <h2 className="section-title mt-5">
-            A more effective way to track progress
+            De la idea al producto, sin complicaciones
           </h2>
           {/* Description paragraph */}
           <p className="section-description mt-5">
-            Effortlessly turn your ideas into a fully functional, responsive,
-            SaaS website in just minutes with this template.
+            Te acompañamos en todo el ciclo: análisis, diseño UX/UI, desarrollo,
+            pruebas, despliegue en la nube y soporte continuo.
           </p>
         </div>
         {/* Image display area */}
         <div className="relative">
           {/* Main product image */}
-          <Image src={productImage} alt="Product image" className="mt-10" />
-          {/* Pyramid image displayed conditionally on medium screens and above */}
+          <Image src={productImage} alt="Vista del producto" className="mt-10" />
+          {/* Imagen de pirámide displayed conditionally on medium screens and above */}
           <motion.img
             src={pyramidImage.src}
-            alt="Pyramid image"
+            alt="Imagen de pirámide"
             height={262}
             width={262}
             className="absolute -right-36 -top-32 hidden md:block"
             style={{ translateY }}
           />
-          {/* Tube image displayed conditionally on medium screens and above */}
+          {/* Imagen de tubo displayed conditionally on medium screens and above */}
           <motion.img
             src={tubeImage.src}
-            alt="Tube image"
+            alt="Imagen de tubo"
             height={248}
             width={248}
             className="absolute -left-36 bottom-24 hidden md:block"

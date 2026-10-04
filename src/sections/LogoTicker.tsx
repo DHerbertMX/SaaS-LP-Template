@@ -4,11 +4,19 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import acmeLogo from "@/assets/logo-acme.png";
-import quantumLogo from "@/assets/logo-quantum.png";
-import echoLogo from "@/assets/logo-echo.png";
 import celestialLogo from "@/assets/logo-celestial.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
+
+const logos = [
+  { src: acmeLogo, alt: "Logo Acme" },
+  { src: celestialLogo, alt: "Logo Celestial" },
+  { src: pulseLogo, alt: "Logo Pulse" },
+  { src: apexLogo, alt: "Logo Apex" },
+];
+
+// Repeat the list so one pass is always wider than the container
+const track = [...logos, ...logos, ...logos];
 
 export const LogoTicker = () => {
   return (
@@ -20,74 +28,21 @@ export const LogoTicker = () => {
             className="flex flex-none gap-14 pr-14"
             animate={{ translateX: "-50%" }}
             transition={{
-              duration: 20,
+              duration: 40,
               repeat: Infinity,
               repeatType: "loop",
               ease: "linear",
             }}
           >
-            {/* Logo images displayed in the ticker */}
-            <Image
-              src={acmeLogo}
-              alt="Acme logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={quantumLogo}
-              alt="Quantum logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={echoLogo}
-              alt="Echo logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={celestialLogo}
-              alt="Celestial logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={pulseLogo}
-              alt="Pulse logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={apexLogo}
-              alt="Apex logo"
-              className="logo-ticker-image"
-            />
-            {/* Second set of logos */}
-            <Image
-              src={acmeLogo}
-              alt="Acme logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={quantumLogo}
-              alt="Quantum logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={echoLogo}
-              alt="Echo logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={celestialLogo}
-              alt="Celestial logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={pulseLogo}
-              alt="Pulse logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={apexLogo}
-              alt="Apex logo"
-              className="logo-ticker-image"
-            />
+            {/* Track rendered twice; shifting by -50% loops seamlessly */}
+            {[...track, ...track].map(({ src, alt }, index) => (
+              <Image
+                key={index}
+                src={src}
+                alt={alt}
+                className="logo-ticker-image"
+              />
+            ))}
           </motion.div>
         </div>
       </div>

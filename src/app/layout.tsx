@@ -6,8 +6,8 @@ import clsx from "clsx";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Template",
-  description: "Light Saas landing page template",
+  title: "Herzago | Desarrollo de Software",
+  description: "Desarrollo de software a medida: aplicaciones web, móviles y soluciones en la nube.",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="relative">
+    <html lang="es" className="relative scroll-smooth">
       <body className={clsx(dmSans.className, "bg-[#EAEEFE] antialiased")}>
         {children}
       </body>

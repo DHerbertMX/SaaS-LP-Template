@@ -1,41 +1,45 @@
 "use client";
 
 // Importing necessary assets and components
+import { motion } from "framer-motion";
 import { testimonials } from "@/constants";
-import { TestimonialsColumn } from "@/components/TestimonialsColumn";
-
-const firstColumn = testimonials.slice(0, 3);
-const secondColumn = testimonials.slice(3, 6);
-const thirdColumn = testimonials.slice(6, 9);
 
 export const Testimonials = () => {
   return (
-    <section className="bg-white">
+    <section id="clientes" className="bg-white py-24">
       <div className="container">
         <div className="section-heading">
           {/* Section title and description */}
           <div className="flex justify-center">
-            <div className="tag">Testimonials</div>
+            <div className="tag">Clientes</div>
           </div>
-          <h2 className="section-title mt-5">What our users say</h2>
+          <h2 className="section-title mt-5">Lo que dicen nuestros clientes</h2>
           <p className="section-description mt-5">
-            From intuitive design to powerful features, our app has become an
-            essential tool for users around the world.
+            Empresas que confiaron en nosotros para construir su presencia
+            digital.
           </p>
         </div>
-        <div className="mt-10 flex max-h-[738px] justify-center gap-6 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
-          {/* Testimonials columns */}
-          <TestimonialsColumn testimonials={firstColumn} duration={15} />
-          <TestimonialsColumn
-            testimonials={secondColumn}
-            className="hidden md:block"
-            duration={19}
-          />
-          <TestimonialsColumn
-            testimonials={thirdColumn}
-            className="hidden lg:block"
-            duration={17}
-          />
+        {/* Testimonials */}
+        <div className="mt-16 flex flex-col items-center gap-16">
+          {testimonials.map(({ text, name, company }) => (
+            <motion.figure
+              key={name}
+              className="max-w-[720px] text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <blockquote className="text-xl leading-8 tracking-tight text-[#010D3E] md:text-2xl md:leading-10">
+                &ldquo;{text}&rdquo;
+              </blockquote>
+              <figcaption className="mt-8 text-sm tracking-tight">
+                <span className="font-bold text-black">{name}</span>
+                <span className="mx-2 text-black/30">·</span>
+                <span className="text-black/50">{company}</span>
+              </figcaption>
+            </motion.figure>
+          ))}
         </div>
       </div>
     </section>
