@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       <h2>1. Responsable de tus datos</h2>
       <p>
         {siteConfig.name} (en adelante, &ldquo;Herzago&rdquo;), con domicilio en
-        México, es responsable del tratamiento de los datos personales que nos
+        Tampico, Tamaulipas, México, es responsable del tratamiento de los datos personales que nos
         proporcionas, conforme a la Ley Federal de Protección de Datos
         Personales en Posesión de los Particulares y su normativa aplicable.
       </p>

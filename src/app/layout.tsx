@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import { contactInfo, services, siteConfig } from "@/constants";
+import { contactInfo, faqs, services, siteConfig } from "@/constants";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -52,8 +52,15 @@ const jsonLd = {
   description: siteConfig.description,
   email: contactInfo.email,
   telephone: `+${contactInfo.whatsapp}`,
-  areaServed: "MX",
-  address: { "@type": "PostalAddress", addressCountry: "MX" },
+  priceRange: "$",
+  areaServed: siteConfig.areaServed.map((name) => ({ "@type": "City", name })),
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: siteConfig.city,
+    addressRegion: siteConfig.region,
+    addressCountry: "MX",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 22.2553, longitude: -97.8686 },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Servicios",
@@ -62,6 +69,17 @@ const jsonLd = {
       itemOffered: { "@type": "Service", name: title, description },
     })),
   },
+};
+
+// FAQ structured data, eligible for rich results in Google
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ question, answer }) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
 };
 
 export default function RootLayout({
@@ -75,6 +93,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
         {children}
       </body>

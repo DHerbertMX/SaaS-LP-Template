@@ -6,6 +6,7 @@ import { ProductShowcase } from "@/sections/ProductShowcase";
 import { Services } from "@/sections/Services";
 import { Projects } from "@/sections/Projects";
 import { Testimonials } from "@/sections/Testimonials";
+import { Faq } from "@/sections/Faq";
 import { Contact } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Testimonials />
+      <Faq />
       <Contact />
       <Footer />
     </>

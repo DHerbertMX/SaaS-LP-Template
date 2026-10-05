@@ -127,29 +127,33 @@ export const contactInfo = {
   whatsapp: "528334437517", // international format, digits only
   whatsappLabel: "+52 833 443 7517",
   email: "contacto@herzago.dev",
-  location: "México · Trabajamos de forma remota",
+  location: "Tampico, Tamaulipas · Madero · Altamira",
 };
 
 // Site-wide info used for SEO and legal pages (TODO: confirm domain and legal details)
 export const siteConfig = {
   name: "Herzago",
   url: "https://herzago.dev",
-  title: "Herzago | Desarrollo de software, páginas web y tiendas online",
+  title: "Páginas web en Tampico | Herzago, diseño y desarrollo web",
   description:
-    "Creamos landing pages, catálogos de productos, tiendas online, sitios corporativos y aplicaciones web a medida para impulsar tu negocio en México.",
+    "Creamos tu página web en Tampico, Madero y Altamira: landing pages, tiendas online, catálogos de productos y sistemas a medida. Cotiza gratis por WhatsApp.",
   keywords: [
-    "desarrollo de software",
-    "desarrollo web",
-    "páginas web",
+    "página web Tampico",
+    "páginas web en Tampico",
+    "crea tu página web Tampico",
+    "diseño web Tampico",
+    "desarrollo web Tampico",
+    "tienda online Tampico",
+    "páginas web Madero",
+    "páginas web Altamira",
+    "desarrollo de software Tamaulipas",
     "landing page",
-    "tienda online",
-    "e-commerce",
     "catálogo de productos",
     "aplicaciones web a medida",
-    "sitios web corporativos",
-    "redes sociales",
-    "agencia de desarrollo México",
   ],
+  city: "Tampico",
+  region: "Tamaulipas",
+  areaServed: ["Tampico", "Ciudad Madero", "Altamira", "Tamaulipas"],
   legalUpdated: "4 de octubre de 2026",
 };
 
@@ -159,4 +163,33 @@ export const navLinks = [
   { href: "/#proyectos", label: "Proyectos" },
   { href: "/#clientes", label: "Clientes" },
   { href: "/#contacto", label: "Contacto" },
+];
+
+// Frequently asked questions (also published as FAQPage structured data)
+export const faqs = [
+  {
+    question: "¿Hacen páginas web en Tampico?",
+    answer:
+      "Sí. Somos de Tampico, Tamaulipas, y creamos páginas web para negocios de Tampico, Ciudad Madero y Altamira. También trabajamos con clientes de todo México en línea.",
+  },
+  {
+    question: "¿Cuánto cuesta una página web en Tampico?",
+    answer:
+      "Depende de lo que necesites: una landing page es la opción más accesible, y una tienda online o un sistema a medida requieren más trabajo. Te damos una cotización gratis y sin compromiso por WhatsApp.",
+  },
+  {
+    question: "¿Cuánto tiempo tardan en crear mi página web?",
+    answer:
+      "Una landing page puede estar lista en pocos días. Los catálogos, tiendas online y sistemas a medida toman más tiempo según su alcance. En la cotización te decimos el tiempo exacto.",
+  },
+  {
+    question: "¿Mi página web aparecerá en Google?",
+    answer:
+      "Sí. Todas nuestras páginas se entregan optimizadas para SEO: rápidas, adaptadas a celular y con la configuración necesaria para que Google las encuentre.",
+  },
+  {
+    question: "¿Pueden hacer una tienda online para mi negocio?",
+    answer:
+      "Sí. Creamos tiendas online con carrito de compras, pagos en línea, control de inventario y envíos, o catálogos con pedidos por WhatsApp si prefieres algo más sencillo.",
+  },
 ];
