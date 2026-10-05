@@ -134,7 +134,7 @@ export const contactInfo = {
 export const siteConfig = {
   name: "Herzago",
   url: "https://herzago.dev",
-  title: "Páginas web en Tampico | Herzago, diseño y desarrollo web",
+  title: "Herzago | Desarrollo web",
   description:
     "Creamos tu página web en Tampico, Madero y Altamira: landing pages, tiendas online, catálogos de productos y sistemas a medida. Cotiza gratis por WhatsApp.",
   keywords: [
