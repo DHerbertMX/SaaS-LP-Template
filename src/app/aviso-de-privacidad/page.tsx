@@ -95,10 +95,15 @@ export default function PrivacyPage() {
         en materia de protección de datos personales.
       </p>
 
-      <h2>7. Cookies</h2>
+      <h2>7. Cookies y estadísticas de visitas</h2>
       <p>
-        Este sitio no utiliza cookies de rastreo, publicidad ni analítica. Si en
-        el futuro las incorporamos, actualizaremos este aviso.
+        Este sitio no utiliza cookies de rastreo ni de publicidad. Para conocer
+        cuántas personas lo visitan y qué tan rápido carga usamos Vercel Web
+        Analytics y Vercel Speed Insights, que no utilizan cookies y generan
+        estadísticas agregadas y anónimas (páginas visitadas, tiempos de carga,
+        país, tipo de dispositivo y navegador) sin identificarte personalmente.
+        Si en el futuro incorporamos otras herramientas, actualizaremos este
+        aviso.
       </p>
 
       <h2>8. Cambios a este aviso</h2>
