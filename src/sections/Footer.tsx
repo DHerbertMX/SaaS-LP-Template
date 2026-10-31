@@ -38,7 +38,7 @@ export const Footer = () => {
         </nav>
         {/* Copyright information */}
         <p className="mt-6">
-          &copy; {new Date().getFullYear()} Herzago. Todos los derechos
+          &copy; {new Date().getFullYear()} Herzago.com Todos los derechos
           reservados.
         </p>
       </div>

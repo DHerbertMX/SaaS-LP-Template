@@ -1,6 +1,6 @@
 # Herzago
 
-> Herzago (herzago.dev) es una empresa de desarrollo web y software ubicada en Tampico, Tamaulipas, México. Creamos landing pages, catálogos de productos, tiendas online, sitios web corporativos y aplicaciones web a medida, y ayudamos a las marcas a crecer en redes sociales.
+> Herzago (www.herzago.com) es una empresa de desarrollo web y software ubicada en Tampico, Tamaulipas, México. Creamos landing pages, catálogos de productos, tiendas online, sitios web corporativos y aplicaciones web a medida, y ayudamos a las marcas a crecer en redes sociales.
 
 Atendemos a negocios de Tampico, Ciudad Madero y Altamira, y a clientes de todo México en línea. Cada proyecto incluye análisis, diseño UX/UI, desarrollo, pruebas y despliegue en la nube. La primera consultoría es gratuita.
 
@@ -21,11 +21,11 @@ Atendemos a negocios de Tampico, Ciudad Madero y Altamira, y a clientes de todo 
 
 ## Contacto
 
-- Sitio: https://herzago.dev
+- Sitio: https://www.herzago.com
 - WhatsApp: +52 833 443 7517
-- Formulario: https://herzago.dev/#contacto
+- Formulario: https://www.herzago.com/#contacto
 
 ## Legal
 
-- [Aviso de privacidad](https://herzago.dev/aviso-de-privacidad)
-- [Términos y condiciones](https://herzago.dev/terminos-y-condiciones)
+- [Aviso de privacidad](https://www.herzago.com/aviso-de-privacidad)
+- [Términos y condiciones](https://www.herzago.com/terminos-y-condiciones)

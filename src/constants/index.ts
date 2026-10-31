@@ -6,7 +6,7 @@ import petxImage from "@/assets/projects/petx.png";
 // Testimonials
 export const testimonials = [
   {
-    text: "Trabajar con Herzago.dev fue una excelente experiencia. Desde el inicio entendió lo que buscábamos para WeekendMX y logró convertir la idea en una página moderna, funcional y profesional. Estamos muy contentos con el resultado y definitivamente recomendamos su trabajo.",
+    text: "Trabajar con Herzago fue una excelente experiencia. Desde el inicio entendió lo que buscábamos para WeekendMX y logró convertir la idea en una página moderna, funcional y profesional. Estamos muy contentos con el resultado y definitivamente recomendamos su trabajo.",
     name: "Pedro Muñoz",
     company: "WeekendMX",
   },
@@ -126,14 +126,14 @@ export const projects = [
 export const contactInfo = {
   whatsapp: "528334437517", // international format, digits only
   whatsappLabel: "+52 833 443 7517",
-  email: "contacto@herzago.dev",
+  email: "contacto@herzago.com",
   location: "Tampico, Tamaulipas · Madero · Altamira",
 };
 
 // Site-wide info used for SEO and legal pages (TODO: confirm domain and legal details)
 export const siteConfig = {
   name: "Herzago",
-  url: "https://herzago.dev",
+  url: "https://www.herzago.com",
   title: "Herzago | Desarrollo web",
   description:
     "Creamos tu página web en Tampico, Madero y Altamira: landing pages, tiendas online, catálogos de productos y sistemas a medida. Cotiza gratis por WhatsApp.",
@@ -154,6 +154,8 @@ export const siteConfig = {
   city: "Tampico",
   region: "Tamaulipas",
   areaServed: ["Tampico", "Ciudad Madero", "Altamira", "Tamaulipas"],
+  // ISO date of the last content update; used for sitemap lastmod
+  lastUpdated: "2026-10-04",
   legalUpdated: "4 de octubre de 2026",
 };
 
