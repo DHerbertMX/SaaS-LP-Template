@@ -2,6 +2,7 @@
 import weekendmxImage from "@/assets/projects/weekendmx.png";
 import escuelaParaPadresImage from "@/assets/projects/escuelaparapadres.png";
 import petxImage from "@/assets/projects/petx.png";
+import timbrexImage from "@/assets/projects/timbrex.png";
 
 // Testimonials
 export const testimonials = [
@@ -119,6 +120,14 @@ export const projects = [
       "Sitio para clínica veterinaria con catálogo de productos y reservación de citas en línea.",
     url: "https://petx-ten.vercel.app/",
     image: petxImage,
+  },
+  {
+    title: "Timbrex",
+    category: "Sistema de facturación",
+    description:
+      "Sistema de facturación electrónica CFDI 4.0 para México, con emisión y administración de facturas.",
+    url: "https://timbrex.vercel.app/",
+    image: timbrexImage,
   },
 ];
 
