@@ -7,12 +7,14 @@ import acmeLogo from "@/assets/logo-acme.png";
 import celestialLogo from "@/assets/logo-celestial.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
+import timbrexLogo from "@/assets/timbrexlogo.png";
 
 const logos = [
   { src: acmeLogo, alt: "Logo Acme" },
   { src: celestialLogo, alt: "Logo Celestial" },
   { src: pulseLogo, alt: "Logo Pulse" },
   { src: apexLogo, alt: "Logo Apex" },
+  { src: timbrexLogo, alt: "Logo Timbrex" },
 ];
 
 // Repeat the list so one pass is always wider than the container
