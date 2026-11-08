@@ -92,7 +92,7 @@ export const Projects = () => {
               <motion.a
                 key={current}
                 href={url}
-                target="_blank"
+                target={url.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, x: direction >= 0 ? 60 : -60 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -120,7 +120,7 @@ export const Projects = () => {
           <div className="mt-6 flex items-center justify-between gap-4">
             <a
               href={url}
-              target="_blank"
+              target={url.startsWith("http") ? "_blank" : undefined}
               rel="noopener noreferrer"
               className="group flex items-baseline gap-3 tracking-tight"
             >

@@ -18,7 +18,16 @@ Atendemos a negocios de Tampico, Ciudad Madero y Altamira, y a clientes de todo 
 - [WeekendMX](https://www.weekendmx.com/): portal de conciertos con eventos, boletos, blog y galería.
 - [Escuela para Padres](https://escuelaparapadres.vercel.app/): aplicación web de registro a talleres por plantel.
 - [Pet X](https://petx-ten.vercel.app/): sitio para clínica veterinaria con catálogo y reservación de citas.
-- [Timbrex](https://timbrex.vercel.app/): sistema de facturación electrónica CFDI 4.0 para México.
+- [Timbrex](https://www.herzago.com/timbrex): sistema de facturación electrónica CFDI 4.0 para México.
+
+## Timbrex
+
+Timbrex es el sistema de facturación electrónica CFDI 4.0 creado por Herzago. Permite emitir, timbrar y enviar facturas ante el SAT en segundos, sin mensualidades: se compran paquetes de timbres que no caducan, desde $99 MXN. Está pensado para freelancers, programadores, cafeterías y pequeños comercios. Pagos seguros con Stripe (tarjeta, OXXO o transferencia).
+
+- [Timbrex](https://www.herzago.com/timbrex): funciones y cómo funciona.
+- [Precios de Timbrex](https://www.herzago.com/timbrex/precios): paquetes de timbres.
+- [¿Qué es el CFDI 4.0?](https://www.herzago.com/timbrex/que-es-cfdi-4-0): guía de facturación electrónica.
+- [Entrar a Timbrex](https://timbrex.vercel.app/)
 
 ## Contacto
 

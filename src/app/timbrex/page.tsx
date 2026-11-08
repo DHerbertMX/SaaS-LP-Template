@@ -16,6 +16,7 @@ import {
   timbrexComparison,
   timbrexFaqs,
   timbrexFeatures,
+  timbrexKeywords,
   timbrexSteps,
 } from "@/constants/timbrex";
 
@@ -26,6 +27,7 @@ const description =
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
+  keywords: timbrexKeywords,
   alternates: { canonical: "/timbrex" },
   openGraph: { title, description, url: "/timbrex" },
 };
@@ -35,6 +37,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Timbrex",
+  alternateName: "Timbrex Facturación Electrónica",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   url: timbrexAppUrl,
@@ -48,6 +51,17 @@ const jsonLd = {
     highPrice: 899,
   },
   creator: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+};
+
+// FAQ structured data, eligible for rich results in Google
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: timbrexFaqs.map(({ question, answer }) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
 };
 
 // Line icons (24x24, stroke-based), same style as the Services section
@@ -104,6 +118,10 @@ export default function TimbrexPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
       <main>

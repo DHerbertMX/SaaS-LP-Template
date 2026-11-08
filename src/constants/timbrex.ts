@@ -8,6 +8,20 @@ export const timbrexAppUrl = "https://timbrex.vercel.app/";
 
 export { dashboardImage };
 
+// Search terms the /timbrex pages target
+export const timbrexKeywords = [
+  "Timbrex",
+  "Timbrex facturación",
+  "facturación electrónica",
+  "facturación electrónica CFDI 4.0",
+  "sistema de facturación",
+  "facturar en línea",
+  "timbres CFDI",
+  "factura electrónica sin mensualidad",
+  "facturación para freelancers",
+  "facturación para pequeños negocios",
+];
+
 // Keep in sync with features/billing/constants/plans.ts in the Timbrex repo
 export const timbrexPackages = [
   { name: "Starter", stamps: 20, price: 99, support: "Soporte por email" },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { TimbrexPricing } from "@/sections/TimbrexPricing";
-import { timbrexFaqs } from "@/constants/timbrex";
+import { timbrexFaqs, timbrexKeywords } from "@/constants/timbrex";
 
 const title = "Precios de Timbrex: paquetes de timbres CFDI";
 const description =
@@ -11,6 +11,7 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
+  keywords: timbrexKeywords,
   alternates: { canonical: "/timbrex/precios" },
   openGraph: { title, description, url: "/timbrex/precios" },
 };

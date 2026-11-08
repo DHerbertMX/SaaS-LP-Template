@@ -126,7 +126,7 @@ export const projects = [
     category: "Sistema de facturación",
     description:
       "Sistema de facturación electrónica CFDI 4.0 para México, con emisión y administración de facturas.",
-    url: "https://timbrex.vercel.app/",
+    url: "/timbrex",
     image: timbrexImage,
   },
 ];
@@ -159,6 +159,8 @@ export const siteConfig = {
     "landing page",
     "catálogo de productos",
     "aplicaciones web a medida",
+    "sistema de facturación electrónica",
+    "Timbrex",
   ],
   city: "Tampico",
   region: "Tamaulipas",

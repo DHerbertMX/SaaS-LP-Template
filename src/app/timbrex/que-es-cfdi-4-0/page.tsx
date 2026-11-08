@@ -9,6 +9,13 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
+  keywords: [
+    "qué es CFDI 4.0",
+    "factura electrónica",
+    "timbrado CFDI",
+    "cómo facturar SAT",
+    "Timbrex",
+  ],
   alternates: { canonical: "/timbrex/que-es-cfdi-4-0" },
   openGraph: {
     type: "article",
