@@ -18,7 +18,7 @@ export const TimbrexPricing = (props: { headingLevel?: "h1" | "h2" }) => {
           </Heading>
           <p className="section-description mt-5">
             Sin mensualidades. Compras un paquete y tus timbres{" "}
-            <strong>no vencen</strong>.
+            <strong>no caducan</strong>.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -42,7 +42,7 @@ export const TimbrexPricing = (props: { headingLevel?: "h1" | "h2" }) => {
                   </h3>
                   {recommended && (
                     <span className="rounded-xl border border-white/20 px-3 py-1 text-sm">
-                      Mejor precio
+                      Recomendado
                     </span>
                   )}
                 </div>
@@ -96,7 +96,7 @@ export const TimbrexPricing = (props: { headingLevel?: "h1" | "h2" }) => {
           )}
         </div>
         <p className="mt-8 text-center text-sm text-black/50">
-          Pago con tarjeta, efectivo en OXXO o transferencia SPEI.
+          Pagos seguros con Stripe: tarjeta, efectivo en OXXO o transferencia.
         </p>
       </div>
     </section>

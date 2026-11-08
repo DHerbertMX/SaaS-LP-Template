@@ -6,7 +6,7 @@ import { timbrexFaqs } from "@/constants/timbrex";
 
 const title = "Precios de Timbrex: paquetes de timbres CFDI";
 const description =
-  "Compra paquetes de timbres para facturar CFDI 4.0 con Timbrex desde $99 MXN. Sin mensualidades: tus timbres no vencen y se acumulan.";
+  "Compra paquetes de timbres para facturar CFDI 4.0 con Timbrex desde $99 MXN. Sin mensualidades: tus timbres no caducan y se acumulan.";
 
 export const metadata: Metadata = {
   title,
@@ -31,7 +31,7 @@ export default function TimbrexPricingPage() {
                 <strong>Sin compromiso:</strong> compras cuando lo necesitas.
               </li>
               <li>
-                <strong>Timbres que no vencen:</strong> si un mes facturas
+                <strong>Timbres que no caducan:</strong> si un mes facturas
                 poco, no pierdes nada.
               </li>
               <li>

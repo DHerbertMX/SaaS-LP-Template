@@ -46,38 +46,96 @@ export const timbrexSteps = [
   },
 ];
 
+// Main selling points, in the order they appear on /timbrex
+export const timbrexBenefits = [
+  {
+    icon: "bolt",
+    title: "Factura en segundos",
+    description:
+      "Eliges a tu cliente, agregas tus conceptos y timbras. Sin pasos de más.",
+  },
+  {
+    icon: "wallet",
+    title: "Paga solo lo que necesitas",
+    description:
+      "Sin mensualidades ni planes forzosos. Compras timbres cuando los ocupas.",
+  },
+  {
+    icon: "history",
+    title: "Tu historial siempre disponible",
+    description:
+      "Consulta y descarga el XML y el PDF de cualquier factura cuando quieras.",
+  },
+  {
+    icon: "shield",
+    title: "Pagos seguros con Stripe",
+    description:
+      "Paga con tarjeta, en efectivo en OXXO o por transferencia, con la seguridad de Stripe.",
+  },
+];
+
+// Who Timbrex is for; scenarios, not testimonials
+export const timbrexAudiences = [
+  {
+    title: "Freelancers",
+    example: "Facturas a tus clientes al terminar cada proyecto.",
+  },
+  {
+    title: "Programadores",
+    example: "Cobras por horas o por iguala y solo emites unas cuantas facturas al mes.",
+  },
+  {
+    title: "Cafeterías y restaurantes",
+    example: "De vez en cuando un cliente te pide factura de su consumo.",
+  },
+  {
+    title: "Pequeños comercios",
+    example: "Vendes al público y solo algunos clientes necesitan factura.",
+  },
+];
+
+// Timbrex vs a typical monthly-subscription invoicing service
+export const timbrexComparison = [
+  { label: "Pago mensual obligatorio", timbrex: "No", others: "Sí" },
+  {
+    label: "Timbres que no usas",
+    timbrex: "Se quedan en tu cuenta",
+    others: "Suelen perderse al cerrar el mes",
+  },
+  {
+    label: "Meses en los que no facturas",
+    timbrex: "No pagas nada",
+    others: "Pagas igual",
+  },
+  {
+    label: "Renovación automática",
+    timbrex: "No hay nada que cancelar",
+    others: "Hay que cancelarla",
+  },
+  { label: "Para empezar", timbrex: "Desde $99 MXN, una vez", others: "Un cobro cada mes" },
+];
+
+// Smaller capabilities listed under the steps
 export const timbrexFeatures = [
-  {
-    title: "CFDI 4.0",
-    description: "Facturas con el formato vigente del SAT.",
-  },
-  {
-    title: "Timbrado al instante",
-    description: "Cada factura se timbra con un PAC autorizado.",
-  },
-  {
-    title: "XML y PDF",
-    description: "Descarga ambos archivos cuando los necesites.",
-  },
-  {
-    title: "Alta con tu CSF",
-    description: "Sube tu constancia y tus datos fiscales se llenan solos.",
-  },
-  {
-    title: "Envío por correo",
-    description: "Manda la factura a tu cliente desde Timbrex.",
-  },
-  {
-    title: "Cancelación de CFDI",
-    description: "Cancela facturas timbradas sin salir del sistema.",
-  },
+  "CFDI 4.0",
+  "Timbrado con PAC autorizado",
+  "XML y PDF",
+  "Alta con tu CSF",
+  "Envío por correo",
+  "Cancelación de CFDI",
+  "Clientes ilimitados",
 ];
 
 export const timbrexFaqs = [
   {
+    question: "¿Los timbres caducan?",
+    answer:
+      "No. Tus timbres no caducan y se acumulan con los que compres después. Si un mes no facturas, no pierdes nada.",
+  },
+  {
     question: "¿Tengo que pagar una mensualidad?",
     answer:
-      "No. Compras un paquete de timbres y lo usas cuando quieras. Tus timbres no vencen y se acumulan con los que compres después.",
+      "No. Compras un paquete de timbres una sola vez y lo usas cuando quieras.",
   },
   {
     question: "¿Qué cuenta como un timbre?",
@@ -92,6 +150,6 @@ export const timbrexFaqs = [
   {
     question: "¿Cómo puedo pagar?",
     answer:
-      "Con tarjeta, en efectivo en tiendas OXXO o por transferencia SPEI.",
+      "Con tarjeta, en efectivo en tiendas OXXO o por transferencia bancaria. Los pagos se procesan de forma segura con Stripe.",
   },
 ];
