@@ -7,14 +7,14 @@ import acmeLogo from "@/assets/logo-acme.png";
 import celestialLogo from "@/assets/logo-celestial.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
-import timbrexLogo from "@/assets/timbrexlogo.png";
 
 const logos = [
   { src: acmeLogo, alt: "Logo Acme" },
   { src: celestialLogo, alt: "Logo Celestial" },
   { src: pulseLogo, alt: "Logo Pulse" },
   { src: apexLogo, alt: "Logo Apex" },
-  { src: timbrexLogo, alt: "Logo Timbrex" },
+  // SVG from public/ (aspect 1040x256), so it needs explicit dimensions
+  { src: "/brand/timbrex-horizontal.svg", alt: "Logo Timbrex", width: 130, height: 32 },
 ];
 
 // Repeat the list so one pass is always wider than the container
@@ -37,13 +37,8 @@ export const LogoTicker = () => {
             }}
           >
             {/* Track rendered twice; shifting by -50% loops seamlessly */}
-            {[...track, ...track].map(({ src, alt }, index) => (
-              <Image
-                key={index}
-                src={src}
-                alt={alt}
-                className="logo-ticker-image"
-              />
+            {[...track, ...track].map((logo, index) => (
+              <Image key={index} {...logo} className="logo-ticker-image" />
             ))}
           </motion.div>
         </div>

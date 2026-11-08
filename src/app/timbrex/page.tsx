@@ -6,7 +6,6 @@ import { TimbrexPricing } from "@/sections/TimbrexPricing";
 import { BrowserFrame } from "@/components/BrowserFrame";
 import ArrowIcon from "@/assets/arrow-right.svg";
 import CheckIcon from "@/assets/check.svg";
-import timbrexLogo from "@/assets/timbrexlogo.png";
 import { siteConfig } from "@/constants";
 import {
   dashboardImage,
@@ -130,8 +129,10 @@ export default function TimbrexPage() {
           <div className="container">
             <div className="mx-auto max-w-[720px] text-center">
               <Image
-                src={timbrexLogo}
+                src="/brand/timbrex-horizontal.svg"
                 alt="Timbrex"
+                width={228}
+                height={56}
                 className="mx-auto h-14 w-auto"
                 priority
               />
