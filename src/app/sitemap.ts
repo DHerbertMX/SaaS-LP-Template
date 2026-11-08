@@ -11,6 +11,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    ...["/timbrex", "/timbrex/precios", "/timbrex/que-es-cfdi-4-0"].map(
+      (path) => ({
+        url: `${siteConfig.url}${path}`,
+        lastModified,
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      })
+    ),
     {
       url: `${siteConfig.url}/aviso-de-privacidad`,
       lastModified,

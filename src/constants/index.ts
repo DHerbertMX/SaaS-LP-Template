@@ -164,15 +164,16 @@ export const siteConfig = {
   region: "Tamaulipas",
   areaServed: ["Tampico", "Ciudad Madero", "Altamira", "Tamaulipas"],
   // ISO date of the last content update; used for sitemap lastmod
-  lastUpdated: "2026-10-04",
+  lastUpdated: "2026-11-08",
   legalUpdated: "4 de octubre de 2026",
 };
 
-// Navigation links; "/#id" so they also work from the legal pages
+// Navigation links; "/#id" so they also work from the other pages
 export const navLinks = [
   { href: "/#servicios", label: "Servicios" },
   { href: "/#proyectos", label: "Proyectos" },
   { href: "/#clientes", label: "Clientes" },
+  { href: "/timbrex", label: "Timbrex" },
   { href: "/#contacto", label: "Contacto" },
 ];
 
