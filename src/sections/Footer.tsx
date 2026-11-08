@@ -1,6 +1,5 @@
 // Importing necessary assets and components
 import Image from "next/image";
-import logo from "@/assets/logosaas.png";
 import { navLinks } from "@/constants";
 
 export const Footer = () => {
@@ -10,7 +9,13 @@ export const Footer = () => {
         {/* Logo section with gradient background */}
         <div className="relative inline-flex before:absolute before:bottom-0 before:top-2 before:w-full before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:blur before:content-['']">
           <a href="/" aria-label="Ir al inicio" className="relative">
-            <Image src={logo} height={60} alt="Herzago" />
+            <Image
+              src="/brand/herzago-app-icon.svg"
+              width={60}
+              height={60}
+              alt="Herzago"
+              unoptimized
+            />
           </a>
         </div>
         {/* Navigation links */}

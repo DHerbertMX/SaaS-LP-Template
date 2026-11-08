@@ -5,7 +5,6 @@ import React from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import ArrowRight from "@/assets/arrow-right.svg";
-import Logo from "@/assets/logosaas.png";
 import MenuIcon from "@/assets/menu.svg";
 import { navLinks } from "@/constants";
 
@@ -34,11 +33,12 @@ export const Header = () => {
             {/* Logo image */}
             <a href="/" aria-label="Ir al inicio" onClick={closeMenu}>
               <Image
-                src={Logo}
+                src="/brand/herzago-horizontal-color.svg"
                 alt="Herzago"
-                height={200}
-                width={120}
+                width={137}
+                height={44}
                 priority
+                unoptimized
               />
             </a>
             {/* Menu button for mobile view */}
