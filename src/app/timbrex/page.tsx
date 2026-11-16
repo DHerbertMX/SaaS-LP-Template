@@ -29,6 +29,8 @@ export const metadata: Metadata = {
   keywords: timbrexKeywords,
   alternates: { canonical: "/timbrex" },
   openGraph: { title, description, url: "/timbrex" },
+  // Without this, Twitter/X inherits the agency title from the root layout
+  twitter: { card: "summary_large_image", title, description },
 };
 
 // Structured data describing Timbrex as a software product
@@ -39,8 +41,9 @@ const jsonLd = {
   alternateName: "Timbrex Facturación Electrónica",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
-  url: timbrexAppUrl,
+  url: `${siteConfig.url}/timbrex`,
   description,
+  areaServed: { "@type": "Country", name: "México" },
   inLanguage: "es-MX",
   screenshot: `${siteConfig.url}${dashboardImage.src}`,
   offers: {
@@ -52,7 +55,7 @@ const jsonLd = {
   creator: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
 };
 
-// FAQ structured data, eligible for rich results in Google
+// FAQ structured data (Google retired FAQ rich results in May 2026; kept for machine readability)
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -138,11 +141,11 @@ export default function TimbrexPage() {
               />
               <div className="tag mt-8">Facturación electrónica CFDI 4.0</div>
               <h1 className="mt-6 bg-gradient-to-b from-black to-[#001E80] bg-clip-text text-5xl font-bold tracking-tighter text-transparent md:text-7xl">
-                Facturar nunca fue tan sencillo
+                Facturación electrónica sin mensualidades
               </h1>
               <p className="mt-6 text-xl tracking-tight text-[#010D3E]">
-                Emite facturas en segundos, sin mensualidades y con timbres que
-                no caducan.
+                Facturar nunca fue tan sencillo: emite tus CFDI 4.0 en segundos
+                y paga solo los timbres que usas. No caducan.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-1">
                 <a
@@ -159,7 +162,7 @@ export default function TimbrexPage() {
                 </a>
               </div>
               <ul className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm tracking-tight text-[#010D3E]">
-                {["Sin mensualidades", "Timbres que no caducan", "Desde $99 MXN"].map(
+                {["3 timbres gratis", "Sin mensualidades", "Timbres que no caducan", "Desde $99 MXN"].map(
                   (item) => (
                     <li key={item} className="flex items-center gap-2">
                       <CheckIcon className="h-5 w-5 shrink-0" />

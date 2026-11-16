@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   keywords: timbrexKeywords,
   alternates: { canonical: "/timbrex/precios" },
   openGraph: { title, description, url: "/timbrex/precios" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function TimbrexPricingPage() {

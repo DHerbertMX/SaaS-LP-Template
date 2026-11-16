@@ -4,7 +4,8 @@ import perfilFiscalImage from "@/assets/timbrex/perfil-fiscal.png";
 import clientesImage from "@/assets/timbrex/clientes.png";
 import facturasImage from "@/assets/timbrex/facturas.png";
 
-export const timbrexAppUrl = "https://timbrex.vercel.app/";
+// Sign-up page of the Timbrex app (its root path returns 404)
+export const timbrexAppUrl = "https://timbrex.herzago.com/sign-up";
 
 export { dashboardImage };
 
@@ -30,7 +31,7 @@ export const timbrexPackages = [
     name: "Pro",
     stamps: 150,
     price: 499,
-    support: "Soporte por email",
+    support: "Soporte prioritario",
     recommended: true,
   },
   { name: "Business", stamps: 300, price: 899, support: "Soporte dedicado" },
@@ -132,7 +133,8 @@ export const timbrexComparison = [
 // Smaller capabilities listed under the steps
 export const timbrexFeatures = [
   "CFDI 4.0",
-  "Timbrado con PAC autorizado",
+  "Timbrado con SW Sapien, PAC autorizado por el SAT",
+  "3 timbres gratis al registrarte",
   "XML y PDF",
   "Alta con tu CSF",
   "Envío por correo",
@@ -149,7 +151,7 @@ export const timbrexFaqs = [
   {
     question: "¿Tengo que pagar una mensualidad?",
     answer:
-      "No. Compras un paquete de timbres una sola vez y lo usas cuando quieras.",
+      "No. Compras un paquete de timbres una sola vez y lo usas cuando quieras. Además, al crear tu cuenta recibes 3 timbres gratis para probar.",
   },
   {
     question: "¿Qué cuenta como un timbre?",

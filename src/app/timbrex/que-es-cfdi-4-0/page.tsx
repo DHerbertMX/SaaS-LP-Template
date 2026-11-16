@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description,
     url: "/timbrex/que-es-cfdi-4-0",
   },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 const articleJsonLd = {
