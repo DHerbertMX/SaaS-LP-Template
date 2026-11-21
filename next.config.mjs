@@ -28,6 +28,11 @@ const nextConfig = {
     return config;
   },
 
+  // Checkin vive en /reloj-checador (keyword en la URL)
+  async redirects() {
+    return [{ source: "/checkin", destination: "/reloj-checador", permanent: true }];
+  },
+
   // ...other config
 };
 

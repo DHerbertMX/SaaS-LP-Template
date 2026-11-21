@@ -11,6 +11,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    ...["/reloj-checador", "/reloj-checador/registro-electronico-jornada-laboral"].map(
+      (path) => ({
+        url: `${siteConfig.url}${path}`,
+        lastModified,
+        changeFrequency: "weekly" as const,
+        priority: 0.9,
+      })
+    ),
     ...["/timbrex", "/timbrex/precios", "/timbrex/que-es-cfdi-4-0"].map(
       (path) => ({
         url: `${siteConfig.url}${path}`,

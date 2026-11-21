@@ -5,6 +5,7 @@ import { LogoTicker } from "@/sections/LogoTicker";
 import { ProductShowcase } from "@/sections/ProductShowcase";
 import { Services } from "@/sections/Services";
 import { Projects } from "@/sections/Projects";
+import { CheckinShowcase } from "@/sections/CheckinShowcase";
 import { Testimonials } from "@/sections/Testimonials";
 import { Faq } from "@/sections/Faq";
 import { Contact } from "@/sections/Contact";
@@ -35,6 +36,7 @@ export default function Home() {
       <ProductShowcase />
       <Services />
       <Projects />
+      <CheckinShowcase />
       <Testimonials />
       <Faq />
       <Contact />

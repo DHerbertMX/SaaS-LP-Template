@@ -161,6 +161,10 @@ export const siteConfig = {
     "aplicaciones web a medida",
     "sistema de facturación electrónica",
     "Timbrex",
+    "reloj checador",
+    "reloj checador digital",
+    "control de asistencia",
+    "Checkin",
   ],
   city: "Tampico",
   region: "Tamaulipas",
@@ -176,6 +180,7 @@ export const navLinks = [
   { href: "/#proyectos", label: "Proyectos" },
   { href: "/#clientes", label: "Clientes" },
   { href: "/timbrex", label: "Timbrex" },
+  { href: "/reloj-checador", label: "Checkin" },
   { href: "/#contacto", label: "Contacto" },
 ];
 

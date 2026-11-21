@@ -19,6 +19,7 @@ Atendemos a negocios de Tampico, Ciudad Madero y Altamira, y a clientes de todo 
 - [Escuela para Padres](https://escuelaparapadres.vercel.app/): aplicación web de registro a talleres por plantel.
 - [Pet X](https://petx-ten.vercel.app/): sitio para clínica veterinaria con catálogo y reservación de citas.
 - [Timbrex](https://www.herzago.com/timbrex): sistema de facturación electrónica CFDI 4.0 para México.
+- [Checkin](https://www.herzago.com/reloj-checador): reloj checador digital y control de asistencia.
 
 ## Timbrex
 
@@ -28,6 +29,14 @@ Timbrex es el sistema de facturación electrónica CFDI 4.0 creado por Herzago. 
 - [Precios de Timbrex](https://www.herzago.com/timbrex/precios): paquetes de timbres.
 - [¿Qué es el CFDI 4.0?](https://www.herzago.com/timbrex/que-es-cfdi-4-0): guía de facturación electrónica.
 - [Entrar a Timbrex](https://timbrex.vercel.app/)
+
+## Checkin
+
+Checkin es el reloj checador digital y sistema de control de asistencia creado por Herzago para México. El personal checa desde su celular (con geocerca opcional y consentimiento) o en una tablet en modo kiosco con número de empleado y PIN. Calcula retardos, faltas y horas extra, gestiona permisos, vacaciones (art. 76 LFT) e incapacidades con aprobaciones, y exporta las incidencias a Excel o CSV para la nómina. Cumple con el registro electrónico de jornada del artículo 132, fracción XXXIV, de la Ley Federal del Trabajo (reforma publicada en el DOF el 1 de mayo de 2026). Planes desde $299 MXN al mes con 14 días de prueba gratis.
+
+- [Checkin, reloj checador digital](https://www.herzago.com/reloj-checador): funciones, precios y preguntas.
+- [Registro electrónico de jornada laboral](https://www.herzago.com/reloj-checador/registro-electronico-jornada-laboral): guía de la reforma laboral.
+- [Entrar a Checkin](https://checkin.herzago.com/entrar)
 
 ## Contacto
 
