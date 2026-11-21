@@ -99,7 +99,7 @@ export default function RelojChecadorPage() {
           <div className="container">
             <div className="mx-auto max-w-[760px] text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/checkin/3d-clock.webp" alt="" aria-hidden width={140} height={140} className="mx-auto h-32 w-32" />
+              <img src="/brand/checkin-horizontal.svg" alt="Checkin" width={228} height={56} className="mx-auto h-14 w-auto" />
               <div className="tag mt-4">Checkin · Control de asistencia</div>
               <h1 className="mt-6 bg-gradient-to-b from-black to-[#001E80] bg-clip-text text-5xl font-bold tracking-tighter text-transparent md:text-7xl">
                 Reloj checador digital para tu empresa

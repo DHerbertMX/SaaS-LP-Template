@@ -15,6 +15,7 @@ const logos = [
   { src: apexLogo, alt: "Logo Apex" },
   // SVG from public/ (aspect 1040x256), so it needs explicit dimensions
   { src: "/brand/timbrex-horizontal.svg", alt: "Logo Timbrex", width: 130, height: 32 },
+  { src: "/brand/checkin-horizontal.svg", alt: "Logo Checkin", width: 130, height: 32 },
 ];
 
 // Repeat the list so one pass is always wider than the container

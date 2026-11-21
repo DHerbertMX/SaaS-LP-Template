@@ -33,8 +33,8 @@ export const CheckinShowcase = () => {
           </p>
         </div>
         <div className="relative mt-12 grid items-center gap-12 lg:grid-cols-[1fr_1.4fr]">
-          <motion.img src="/checkin/3d-clock.webp" alt="" aria-hidden width={220} className="absolute -left-36 -top-24 hidden lg:block" style={{ translateY }} />
-          <motion.img src="/checkin/3d-calender.webp" alt="" aria-hidden width={180} className="absolute -right-32 bottom-0 hidden lg:block" style={{ rotate: 12, translateY }} />
+          <motion.img src="/checkin/3d-clock.webp" alt="" aria-hidden width={220} className="absolute -left-36 -top-24 hidden mix-blend-multiply lg:block" style={{ translateY }} />
+          <motion.img src="/checkin/3d-calender.webp" alt="" aria-hidden width={180} className="absolute -right-32 bottom-0 hidden mix-blend-multiply lg:block" style={{ rotate: 12, translateY }} />
           <div>
             <ul className="flex flex-col gap-4">
               {points.map((p) => (
