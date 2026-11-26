@@ -6,6 +6,7 @@ import { ProductShowcase } from "@/sections/ProductShowcase";
 import { Services } from "@/sections/Services";
 import { Projects } from "@/sections/Projects";
 import { CheckinShowcase } from "@/sections/CheckinShowcase";
+import { MimikaShowcase } from "@/sections/MimikaShowcase";
 import { Testimonials } from "@/sections/Testimonials";
 import { Faq } from "@/sections/Faq";
 import { Contact } from "@/sections/Contact";
@@ -37,6 +38,7 @@ export default function Home() {
       <Services />
       <Projects />
       <CheckinShowcase />
+      <MimikaShowcase />
       <Testimonials />
       <Faq />
       <Contact />
