@@ -26,7 +26,7 @@ export const Header = () => {
           <ArrowRight className="inline-flex h-4 w-4 items-center justify-center" />
         </a>
       </div>
-      <div className="py-5">
+      <div className="bg-[#EAEEFE]/80 py-5">
         <div className="container">
           {/* Flex container for logo and navigation */}
           <div className="flex items-center justify-between">
